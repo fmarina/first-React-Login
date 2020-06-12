@@ -12,15 +12,14 @@ const Login = () => {
 
     function handleChange(name, value) {
         (name === "usuario") 
-        ? setUser(value) : value.length < 6 
+        ? setUser(value) : (value.length < 6) 
         ? setPasswordError(true) 
-        : setPassword(value); 
-          setPasswordError(false);
+        : setPasswordError(false); setPassword(value); 
     }
 
     function handleSubmit() {
         let account = { user, password};
-        (account) && console.log(account);
+        (account)&& console.log(account);
     }
 
     return (
@@ -45,7 +44,7 @@ const Login = () => {
                     placeholder : "Ingrese Contraseña"                    
                 }}
                 handleChange={handleChange}
-                params={passwordError}
+                param={passwordError}
             />
             <button onClick={handleSubmit}>Ingresar</button>       
         </div>
