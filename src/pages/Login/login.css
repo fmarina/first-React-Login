@@ -1,6 +1,52 @@
 .login-container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: cadetblue;
+}
+
+.login-content {
+    width: 85%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    margin: auto;
+    position: absolute;
+}
+
+.submit-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.submit-button {
+    width: 90%;
+    height: 40px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    background-color: rgb(7, 69, 71);
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.submit-button:hover {
+    opacity: 0.6;
+}
+
+.label-error {
+    width: fit-content;
+    height: fit-content;
+    margin-left: 20px;
+    color: rgb(122, 6, 31);
+    font-size: 12px;
 }

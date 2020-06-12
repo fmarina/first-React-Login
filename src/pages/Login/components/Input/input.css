@@ -32,5 +32,9 @@
     outline: none;
     border: 1px solid red;
     color: red;
-    background-color: rgb(230, 203, 203);
+    background-color: rgb(224, 204, 204);
+}
+
+.input-error::placeholder {
+    color: rosybrown
 }

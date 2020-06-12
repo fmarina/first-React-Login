@@ -4,7 +4,7 @@ import './label.css'
 const Label = (props) => {
     const {text} = props;
     return (
-        <div>
+        <div className="label-container">
             <label>{text}</label>
         </div>
     );

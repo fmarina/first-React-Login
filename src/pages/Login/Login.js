@@ -24,29 +24,40 @@ const Login = () => {
 
     return (
         <div className="login-container">
-            <Title text="¡Bienvenido!"/>
-            <Label text="Usuario"/>
-            <Input 
-                attribute={{
-                    id : "usuario",
-                    name: "usuario",
-                    type : "text",
-                    placeholder : "Ingrese Usuario"                    
-                }}
-                handleChange={handleChange}
-            />
-            <Label text="Contraseña"/>    
-            <Input 
-                attribute={{
-                    id : "contraseña",
-                    name: "contraseña",
-                    type : "password",
-                    placeholder : "Ingrese Contraseña"                    
-                }}
-                handleChange={handleChange}
-                param={passwordError}
-            />
-            <button onClick={handleSubmit}>Ingresar</button>       
+            <div className="login-content">
+                <Title text="¡Bienvenido!"/>
+                <Label text="Usuario"/>
+                <Input 
+                    attribute={{
+                        id : "usuario",
+                        name: "usuario",
+                        type : "text",
+                        placeholder : "Ingrese Usuario"                    
+                    }}
+                    handleChange={handleChange}
+                />
+                <Label text="Contraseña"/>    
+                <Input 
+                    attribute={{
+                        id : "contraseña",
+                        name: "contraseña",
+                        type : "password",
+                        placeholder : "Ingrese Contraseña"                    
+                    }}
+                    handleChange={handleChange}
+                    param={passwordError}
+                />
+                
+                {passwordError &&                
+                    <label className="label-error">Contraseña invalida o incorrecta</label>
+                }
+                <div className="submit-button-container">
+                    <button onClick={handleSubmit} className="submit-button">
+                        Ingresar
+                    </button> 
+                </div>
+
+            </div>                              
         </div>
     );
 }
