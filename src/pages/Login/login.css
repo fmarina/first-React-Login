@@ -50,3 +50,12 @@
     color: rgb(122, 6, 31);
     font-size: 12px;
 }
+
+.label-haserror {
+    width: fit-content;
+    height: fit-content;
+    font-size: 14px;
+    color: rgb(145, 9, 38);
+    margin-top: 15px;
+    font-weight: 500;
+}
