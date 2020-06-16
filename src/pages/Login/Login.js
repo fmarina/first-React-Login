@@ -57,7 +57,7 @@ const Login = () => {
 
     return (
         <div className="login-container">
-            {isLogin 
+        {isLogin 
             ?
                 <div className="home-container">
                     <h1>Hola, {user}!</h1>
