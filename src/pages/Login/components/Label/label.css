@@ -3,3 +3,10 @@
     align-self: flex-start;
     color: #fff;
 }
+
+@media screen and (min-width: 600px) {
+    .label-container {
+        padding: 10px;
+        font-size: 18px;
+    }
+}

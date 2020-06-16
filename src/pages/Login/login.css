@@ -70,3 +70,23 @@
 .home-container h1, .home-container label {
     color: #fff;    
 }
+
+@media screen and (min-width: 600px) {
+    .login-content {
+        width: 60%;
+    }
+    .submit-button {
+        height: 50px;
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .login-content {
+        width: 50%;
+    }
+    .submit-button {
+        height: 50px;
+        font-size: 18px;
+    }
+}
