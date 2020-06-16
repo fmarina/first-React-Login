@@ -47,8 +47,14 @@ const Login = () => {
 
     return (
         <div className="login-container">
-            {!isLogin && 
-                <div className="login-content">
+            {isLogin 
+            ?
+                <div className="home-container">
+                    <h1>Hola, {user}!</h1>
+                    <label>Estas logueado</label>
+                </div>
+            :
+                <div className="login-content">                    
                 <Title text="¡Bienvenido!"/>
                 <Label text="Usuario"/>
                 <Input 
@@ -87,10 +93,10 @@ const Login = () => {
                 </div>
 
             </div>
-            }
+        }
                                           
         </div>
-    );
+    )
 }
 
 export default Login;

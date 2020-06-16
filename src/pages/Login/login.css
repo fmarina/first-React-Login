@@ -59,3 +59,14 @@
     margin-top: 15px;
     font-weight: 500;
 }
+
+.home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-container h1, .home-container label {
+    color: #fff;    
+}
