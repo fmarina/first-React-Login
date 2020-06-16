@@ -13,10 +13,20 @@ const Login = () => {
     const [hasError, setHasError] = useState(false);
 
     function handleChange(name, value) {
-        (name === "usuario") 
-        ? setUser(value) : (value.length < 6) 
-        ? setPasswordError(true) 
-        : setPasswordError(false); setPassword(value); 
+        if (name === "usuario") {
+            setUser(value); 
+            setHasError(false);
+        }
+        else {
+            if (value.length < 6) {
+                setPasswordError(true); 
+                setHasError(false);
+            }
+            else {
+                setPasswordError(false); 
+                setPassword(value); 
+            }
+        }
     }
 
     function ifMatch(param) {
